@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 메인 */
+main{
+  position: relative;
+  /* background: pink; */
+}
+/* 섹션1 - 이미지슬라이드 */
+.sec1{
+  width: 1920px;height: 964px;
+  overflow: hidden;
+}
+.sec1 .img-slide{
+  position: absolute;left: 0;top: 0;
+  width: 5760px;height: 100vh;
+  /* margin-left: -100vw; */
+}
+.sec1 .img-slide>div{
+  float: left;
+  width: 1920px;
+}
+.sec1 img{
+  width: 100%;max-width: 1920px;
+  height: 100vh;
+}
+/* 섹션2 - 서피비치 소개 */
+.sec2{
+  position: relative;
+  width: 100%;height: 100vh;
+}
+.sec2 img{
+  position: absolute;left: 0;top: 50%;
+  transform: translateY(-50%);
+  width: 1120px;height: 640px;
+}
+.sec2 .text{
+  position: absolute;right: 120px;bottom: 170px;
+  text-align: right;
+}
+.text h2{
+  font-size: 3.75rem;font-weight: 800;color: #092e6e;
+}
+.text p{
+  margin-top: 0.75rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
