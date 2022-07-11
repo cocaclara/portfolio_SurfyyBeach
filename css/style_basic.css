@@ -30,23 +30,53 @@ header{height: 0;}
 header .header-wrap{
   width: 100%;height: 100px;
   position: relative;z-index: 1;
+  transition: all 0.3s;
   /* background-color: #092e6e; */
+}
+header .header-wrap.on{
+  background-color: #092e6e;
 }
 header .header-wrap .container{
   height: 100px;
 }
 header img{
-  position:absolute;left:0px;top: 50%;
-  transform: translateY(-50%);
+  position:absolute;left:0px;top: 30px;
+}
+header nav{
+  height: 100px;
 }
 header .gnb{
-  position: absolute;right: 0;top: 50%;
-  transform: translateY(-50%);
+  position: absolute;right: 0;top: 30px;
 }
 header .gnb>li{
   display: inline-block;padding: 10px 23px;
+  height: 48px;
+  /* float: left; */
+  display: inline-block;vertical-align: top;
+  position: relative;
 }
-header a{color: #fff;font-size: 20px;font-family: 'Noto Sans KR',sans-serif;font-weight: 600;}
+header .gnb>li:first-child{
+  width: 132px;
+}
+header a{color: #fff;font-size: 1.25rem;font-family: 'Noto Sans KR',sans-serif;font-weight: 600;}
+header .lnb{display: none;}
+/* header .lnb{
+  margin-top: 32px;margin-left: -23px;
+  width: 132px;
+}
+header .lnb li{
+  width: 100%;height: 65px;
+  padding: 20px 0;
+  background: #092e6e;
+  transition: all 0.5s;
+}
+header .lnb li a{
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 20px 14px;
+  transition: all 0.5s;
+} */
+header .lnb li:hover{ background: rgba(9, 45, 109, 0.8);}
 
 /* 푸터 */
 footer{
@@ -85,6 +115,7 @@ button.top{
   position: fixed;bottom: 40px;right: 34px;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 }
 button.top img{
   width: 60px;height: 60px;
