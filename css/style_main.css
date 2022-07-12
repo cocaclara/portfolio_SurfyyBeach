@@ -45,3 +45,142 @@ main{
   font-size: 1.375rem;
   font-weight: 600;
 }
+
+
+
+/* 서브페이지-서피비치 소개 */
+/* 서브페이지-타이틀 */
+#sub_intro_sufyy .sub_page_tit {
+  width: 100%;
+  margin: 220px 0 50px;
+  text-align: left;
+}
+.sub_page_tit .bar_line {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  border-bottom: 1px solid #333;
+  vertical-align: top;
+  margin-right: 10px;
+}
+/* 소개목록 */
+.intro_list {
+  width: 100%;
+  position: relative;
+  margin-bottom: 120px;
+}
+.intro_list>li {
+  position: relative; 
+  height: 600px;
+  margin-bottom: 30px;
+}
+/* 텍스트 */
+.intro_list>li .txt_box {
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  text-align: left;
+}
+.intro_list>li:nth-child(odd) .txt_box {
+  left: 0;
+}
+.intro_list>li:nth-child(even) .txt_box {
+  right: 0;
+}
+.intro_list>li .txt_box .tit_num {
+  font-size: 1.3rem;
+}
+.intro_list>li .txt_box .title {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.intro_list>li .txt_box .txt_wrap {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.txt_wrap .sub_tit {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.txt_wrap .cont_txt {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+/* 이미지 */
+.intro_img_wrap {
+  width: 1280px;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.intro_list>li:nth-child(even) .intro_img_wrap {
+  left: 0;
+}
+.intro_img_wrap img{
+  width: 100%;
+  margin-top: -40px;
+}
+
+/* 서브페이지-이용안내 */
+#sub_use_guide .sub_page_tit {
+  width: 100%;
+  margin: 220px 0 50px;
+  text-align: left;
+}
+/* 이용안내-메뉴 */
+.sub_use_menu {
+  display: flex;
+}
+.sub_use_menu li {
+  width: 25%;
+  height: 60px;
+  position: relative;
+}
+.sub_use_menu li:after {
+  content: '|';
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+.sub_use_menu li.on {
+  background-color: #092e6e;
+}
+.sub_use_menu li:last-child::after {
+  content: '';
+}
+.sub_use_menu li.on_front:after {
+  content: '';
+}
+.sub_use_menu li.on:after {
+  content: '';
+}
+.sub_use_menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.sub_use_menu li.on a {
+  color: #fff;
+}
+
+/* 이용안내 컨텐츠 */
+.sub_use_cont {
+  border: 1px solid #092e6e;
+  padding: 15px;
+  text-align: left;
+}
+.guide_list>li {
+  border-bottom: 1px solid #092e6e;
+}

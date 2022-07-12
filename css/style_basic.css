@@ -60,7 +60,7 @@ header .gnb>li:first-child{
 }
 header a{color: #fff;font-size: 1.25rem;font-family: 'Noto Sans KR',sans-serif;font-weight: 600;}
 header .lnb{display: none;}
-/* header .lnb{
+header .lnb{
   margin-top: 32px;margin-left: -23px;
   width: 132px;
 }
@@ -75,13 +75,14 @@ header .lnb li a{
   font-weight: 400;
   padding: 20px 14px;
   transition: all 0.5s;
-} */
+}
 header .lnb li:hover{ background: rgba(9, 45, 109, 0.8);}
 
 /* 푸터 */
 footer{
   height: 240px;
   position: relative;top:0; bottom: 0;
+  /* border-top: 1px solid #555; */
 }
 .footer-wrap{
   position: absolute;left: 50%;top: 50%;

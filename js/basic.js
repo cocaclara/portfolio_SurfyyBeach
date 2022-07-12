@@ -9,7 +9,10 @@ $(document).ready(function(){
     $('.header-wrap').removeClass('on');
     $(this).find('.lnb').css('display','none');
   });
-  $('.gnb li').mouseover(function(){
+  $('.gnb>li').mouseover(function(){
+    if($('.gnb>li').children('ul.lnb')){
+      $(this).find('.lnb').stop().slideDown(300);
+    }
     // $(this).find('.lnb').stop().slideDown(300);
   });
   $('.gnb').mouseout(function(){
