@@ -173,6 +173,7 @@ main{
   line-height: 60px;
   text-align: center;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .sub_use_menu li.on a {
   color: #fff;
@@ -181,10 +182,80 @@ main{
 /* 이용안내 컨텐츠 */
 .sub_use_cont {
   border: 1px solid #092e6e;
-  padding: 15px;
+  padding: 0 15px;
   text-align: left;
 }
 .guide_list>li {
   border-bottom: 1px solid #092e6e;
-  padding: 20px;
+  padding-top: 10px;
+}
+.guide_list>li:last-child {
+  border-bottom: none;
+}
+.guide_tit {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.guide_tit span {
+  display: inline-block;
+}
+.guide_tit .guide_tit_txt {
+  font-size: 1rem;
+  color: #092e6e;
+  font-weight: 600;
+  padding-left: 5px;
+}
+.guide_tit img {
+  width: 4px;
+}
+.guide_tit .angle_wrap {
+  display: block;
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 10px;
+  background: url('../img/icon/icon_angle.svg') no-repeat center bottom;
+  background-size: 100%;
+}
+.guide_list>li.on .guide_tit {
+  background-color: #eee;
+}
+.guide_list>li.on .guide_tit .angle_wrap {
+  background-position: center top;
+}
+
+.guide_cont {
+  width: 100%;
+  padding: 30px 0 30px 30px;
+  display: none;
+}
+.guide_cont p {
+  font-size: 0.85rem;
+  line-height: 2;
+}
+.guide_cont .guide_att {
+  color: #f74d4d;
+  padding: 10px 0 0;
+}
+.guide_list>li.on .guide_cont {
+  display: block;
+}
+
+.guide_cont .empty {
+  padding-left: 30px;
+}
+.guide_cont .program_list>li {
+  padding-bottom: 20px;
+}
+.guide_cont .program_list>li h4 {
+  font-size: 0.85rem;
+}
+.guide_cont .program_list>li h4::before {
+  content: '· ';
 }

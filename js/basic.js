@@ -16,4 +16,14 @@ $(document).ready(function(){
   $(window).scroll(function(){
     
   });
+
+  // 이용안내
+  $('ul.guide_list>li').click(function(){
+    if($(this).find('.guide_cont').is(':hidden')){
+      $('ul.guide_list>li').removeClass('on');
+      $(this).addClass('on');
+    }else{
+      $(this).removeClass('on');
+    }
+  });
 });
