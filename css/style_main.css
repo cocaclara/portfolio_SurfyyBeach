@@ -131,6 +131,9 @@ main{
 }
 
 /* 서브페이지-이용안내 */
+#sub_use_guide {
+  margin-bottom: 120px;
+}
 #sub_use_guide .sub_page_tit {
   width: 100%;
   margin: 220px 0 50px;
