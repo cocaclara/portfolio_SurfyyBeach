@@ -183,4 +183,5 @@ main{
 }
 .guide_list>li {
   border-bottom: 1px solid #092e6e;
+  padding: 10px;
 }
