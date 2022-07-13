@@ -21,9 +21,21 @@ $(document).ready(function(){
     return; // 스크롤값을 받아서 리턴한다.
 
     if( currentTop > lastScrollTop && lastScrollTop > 0 ){ // 스크롤을 내렸을때 
-      $('.header-wrap').slideUp();
-    }else{  // 스크롤을 올렸을때
-      $('.header-wrap').slideDown();
+      $('.header-wrap').hide().removeClass('on');
+    }else if( currentTop <= delta ){  // 스크롤이 최상단일 때,
+      $('.header-wrap').removeClass('on');
+    }
+    else{  // 스크롤을 올렸을때
+      $('.header-wrap').addClass('on').show();
+      // 스크롤 올렸을 때, 네비게이션 제어
+      $('.gnb li').mouseover(function(){
+        $('.header-wrap').addClass('on');
+        $(this).find('.lnb').stop().slideDown();
+      });
+      $('.gnb').mouseout(function(){
+        $('.header-wrap').addClass('on');
+        $(this).find('.lnb').stop().slideUp(200);
+      });
     }
     lastScrollTop = currentTop;
 
