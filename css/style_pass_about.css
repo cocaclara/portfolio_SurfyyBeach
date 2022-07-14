@@ -3,7 +3,7 @@
 /* 섹션1 - 이미지슬라이드 */
 
 .sec1_pass{
-	margin: 220px auto 120px;
+	margin: 0 auto 120px;
 	/* width: 1280px; */
 	/* background-color: pink; */
 }
@@ -88,3 +88,18 @@
 section:last-child{
 	margin-bottom: 200px;
 }
+
+/* 서브페이지-타이틀 */
+.sub_page_tit {
+	width: 100%;
+	margin: 220px 0 50px;
+	text-align: left;
+  }
+  .sub_page_tit .bar_line {
+	display: inline-block;
+	width: 120px;
+	height: 20px;
+	border-bottom: 1px solid #333;
+	vertical-align: top;
+	margin-right: 10px;
+  }
