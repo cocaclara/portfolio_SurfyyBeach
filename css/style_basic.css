@@ -31,7 +31,7 @@ header .header-wrap{
   width: 100%;height: 100px;
   position: fixed;z-index: 1;
   transition: all 0.3s;
-  /* background-color: #092e6e; */
+  background-color: #092e6e;
 }
 header .header-wrap.on{
   background-color: #092e6e;
