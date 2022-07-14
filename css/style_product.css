@@ -7,7 +7,7 @@
 	/* background-color: pink; */
 }
 .item_wrap{
-	margin: 220px auto 65px;
+	margin: 0 auto 65px;
 	/* width: 1280px; */
 	
 }
@@ -120,4 +120,17 @@
 	font-weight: bold;
 }
 
-
+/* 서브페이지-타이틀 */
+.sub_page_tit {
+	width: 100%;
+	margin: 220px 0 50px;
+	text-align: left;
+  }
+  .sub_page_tit .bar_line {
+	display: inline-block;
+	width: 120px;
+	height: 20px;
+	border-bottom: 1px solid #333;
+	vertical-align: top;
+	margin-right: 10px;
+  }
