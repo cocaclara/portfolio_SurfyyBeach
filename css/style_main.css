@@ -252,13 +252,16 @@ h2.title::before{
 .intro_list {
   width: 100%;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 .intro_list>li {
   position: relative; 
   height: 600px;
   margin-bottom: 30px;
+  margin-top: 100px;
 }
+.intro_list>li:first-child {margin-top: 0;}
+
 /* 텍스트 */
 .intro_list>li .txt_box {
   width: 300px;
@@ -301,10 +304,11 @@ h2.title::before{
 /* 이미지 */
 .intro_img_wrap {
   width: 65%;
-  height: 600px;
+  /* height: 600px; */
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: 50%;transform: translateY(-50%);
+  /* bottom: 0; */
   right: 0;
 }
 .intro_list>li:nth-child(even) .intro_img_wrap {
@@ -312,12 +316,12 @@ h2.title::before{
 }
 .intro_img_wrap img{
   width: 100%;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 
 /* 서브페이지-이용안내 */
 #sub_use_guide {
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 /* 이용안내-메뉴 */
 .sub_use_menu {
